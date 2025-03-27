@@ -1,0 +1,14 @@
+<!--<p>signal-comp works!</p>
+<p>signals from {{this.frameWork()}}</p>
+<p>computed signal {{this.compFrame()}}</p>
+-->
+
+<div class="h-100 bg-primary d-flex flex-row justify-content-center align-items-center">
+   <button (click)="cancelSubscription($event)">Subscribe</button>
+
+   @if(isAdmin()){
+      <h1>true</h1>
+   } @else {
+      <h1>false</h1>
+   }
+</div>

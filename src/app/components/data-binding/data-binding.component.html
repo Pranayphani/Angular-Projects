@@ -1,0 +1,33 @@
+<div class="row bg-success m-3 p-3">
+   <h1 class="text-center">One Way Data Binding</h1>
+   <div class="col-6">
+      <h1>1.Interpolation</h1>
+      <p>{{firstName}}</p>
+      <p>id=>{{id}}</p>
+   </div>
+   <div class="col-6">
+      <h1>2.Property Binding</h1>
+      <input type="text" [value]="defaultSearch" [placeholder]="placeHolder">
+   </div>
+   <div class="col-6">
+      <h1>3.event Binding</h1>
+      <button [class]="buttonStyle" (click)="clickButton()">Click me</button>
+   </div>
+</div>
+
+<div class="row bg-info m-3 p-3">
+   <h1 class="text-center">Two Way Data Binding</h1>
+   <div class="col-3">
+      <input type="text" [(ngModel)]="firstName">
+      <input class="mt-2" type="text" [value]="firstName">
+   </div>
+   <div class="col-3">
+      <select [(ngModel)]="selectedCity">
+         <option value="hyd">hyd</option>
+         <option value="bng">bng</option>
+         <option value="krnt">krnt</option>
+         <option value="del">del</option>
+      </select>
+      -{{selectedCity}}
+   </div>
+</div>
