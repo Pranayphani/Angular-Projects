@@ -1,5 +1,35 @@
 
-<div class="h-100 bg-info m-5 text-center">
-   <app-counter [count]="counter" [titleChange]="apptitle"></app-counter>
-   <app-getter-setter [titleChange]="apptitle"></app-getter-setter>
+<div class="row p-3 bg-dark h-100 m-5 text-center">
+   <div class="col-4">
+      <app-counter [count]="counter" [titleChange]="apptitle"></app-counter>
+   </div>
+
+   <div class="col-4">
+      <app-getter-setter [titleChange]="apptitle"></app-getter-setter>
+   </div>
+
+   <div class="col-4">
+      <app-child-parent (dataEvent)="dataReceived($event)">
+      </app-child-parent>
+      <div class="bg-primary" *ngIf="receivedDataFromChild">
+         {{receivedDataFromChild}}
+      </div>
+   </div>
+   
+   <app-card class="col-4">
+      <p>This para will be placed at default position</p>
+      <p body>This is placed in the first card comp body</p>
+      <p title>This is placed in the first card comp title</p>
+   </app-card>
+
+   <app-card class="col-4">
+      <p body>This is placed in the second card comp body</p>
+      <p title>This is placed in the second card comp title</p>
+      <p>This para will be placed at default position</p>
+   </app-card>
+
+   <app-hover-click class="col-4"></app-hover-click>
+
+   <app-lifecycle-hooks class="col-4" [title]="life"></app-lifecycle-hooks>
 </div>
+
