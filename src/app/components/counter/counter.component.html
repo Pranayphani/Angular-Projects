@@ -1,5 +1,14 @@
-<div class="bg-warning">
+<!-- <div class="bg-warning">
    <h1>Counter Component</h1>
-   <div>{{count}}</div>
-   <div>{{titleChange}}</div>
+   <h2>{{myCounter}}</h2>
+   <div *ngFor="let log of changeLog">
+      <p>{{log}}</p>
+   </div>
+</div> -->
+
+<div>
+   <h1>this is conter comp</h1>
+   <div #containerRef></div>
+
+   <button class="btn btn-primary" (click)="loadComp()">Load Comp</button>
 </div>

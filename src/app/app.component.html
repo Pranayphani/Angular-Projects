@@ -1,5 +1,5 @@
-
-<div class="row p-3 bg-dark h-100 m-5 text-center">
+<!-- 
+<div class="row p-3 h-100 m-5 text-center">
    <div class="col-4">
       <app-counter [count]="counter" [titleChange]="apptitle"></app-counter>
    </div>
@@ -27,9 +27,58 @@
       <p title>This is placed in the second card comp title</p>
       <p>This para will be placed at default position</p>
    </app-card>
-
    <app-hover-click class="col-4"></app-hover-click>
+
+   <div class="col-4">
+      <app-ngfor></app-ngfor>
+   </div>
 
    <app-lifecycle-hooks class="col-4" [title]="life"></app-lifecycle-hooks>
 </div>
+ -->
 
+<!-- 
+ <div class="text-center">
+   <h1>Angular Hooks</h1>
+   <div>
+      <button (click)="increment()">Increment</button>
+      <button (click)="decrement()">Decrement</button>
+   </div>
+
+   <app-counter [myCounter]="counter"></app-counter>
+ </div> -->
+
+<!-- 
+ <div>
+   <app-lifecycle-hooks></app-lifecycle-hooks>
+ </div> -->
+ 
+<!--  
+ -----------ROUTING-------------------
+ <nav class="navbar">
+   <ul class="navbar-links me-auto mb-2 mb-lg-0 ">
+      <li class="nav-item">
+         <a class="nav-link" [routerLink]="'/counter'">Counter</a>
+       </li>
+       <li class="nav-item">
+         <a class="nav-link" [routerLink]="'/hooks'">Hooks</a>
+       </li>
+   </ul>
+ </nav>
+ 
+<router-outlet/> -->
+<!-- 
+<div>
+   <app-tasks></app-tasks>
+</div> -->
+
+<!-- ---------Lazy load------------ -->
+<!-- <div>
+   <ng-container *ngComponentOutlet="LazyLoadComp"></ng-container>
+</div> -->
+
+<!-- ----------- checking change detection---------- -->
+ <div>
+   <app-default></app-default>
+   <app-on-push></app-on-push>
+ </div>

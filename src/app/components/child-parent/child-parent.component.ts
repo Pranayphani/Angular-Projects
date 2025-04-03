@@ -7,7 +7,7 @@ import { Component, EventEmitter, Output } from '@angular/core';
   styleUrl: './child-parent.component.css'
 })
 export class ChildParentComponent {
-  @Output() dataEvent=new EventEmitter<string>();
+  @Output() dataEvent=new EventEmitter<string>();//output decorator
   sendData(){
     this.dataEvent.emit('data from child');
   }
