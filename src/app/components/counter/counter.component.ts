@@ -57,10 +57,6 @@ export class CounterComponent {
 
   componentRef!: ComponentRef<CardComponent>;
 
-  constructor(){}
-
-  ngOnInit(){}
-
   loadComp(){
     this.container.clear();
     this.componentRef=this.container.createComponent(CardComponent);

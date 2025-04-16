@@ -37,22 +37,6 @@
 </div>
  -->
 
-<!-- 
- <div class="text-center">
-   <h1>Angular Hooks</h1>
-   <div>
-      <button (click)="increment()">Increment</button>
-      <button (click)="decrement()">Decrement</button>
-   </div>
-
-   <app-counter [myCounter]="counter"></app-counter>
- </div> -->
-
-<!-- 
- <div>
-   <app-lifecycle-hooks></app-lifecycle-hooks>
- </div> -->
- 
 <!--  
  -----------ROUTING-------------------
  <nav class="navbar">
@@ -67,18 +51,36 @@
  </nav>
  
 <router-outlet/> -->
-<!-- 
-<div>
-   <app-tasks></app-tasks>
-</div> -->
+
+<!-- --------------Dynamic comp loading--------- -->
+<!-- <app-counter></app-counter> -->
 
 <!-- ---------Lazy load------------ -->
-<!-- <div>
+ <!-- <div>
    <ng-container *ngComponentOutlet="LazyLoadComp"></ng-container>
-</div> -->
+</div>  -->
 
-<!-- ----------- checking change detection---------- -->
- <div>
-   <app-default></app-default>
-   <app-on-push></app-on-push>
- </div>
+
+ <!-- --------------------traditional two way data bind-->
+  <!-- <div>
+   <app-data-binding [size]="fontSizePx" (sizeChange)="fontSizePx=$event"></app-data-binding>
+ </div> -->
+
+ <!-- ---------banana in the box-------->
+ <!-- <app-data-binding [(size)]="fontSizePx"></app-data-binding>  -->
+
+ <!-- -----------Host Binding-------->
+ <!-- <app-hover-click>
+   <input type="text" [value]="inputValue">
+ </app-hover-click> -->
+
+ <!-- ----------------------------pipes------------ -->
+  <!-- <app-pipes></app-pipes> -->
+
+  <!-- <div>
+   <app-custom-directive></app-custom-directive>
+  </div> -->
+
+  <!-- <app-custom-directive></app-custom-directive> -->
+
+<app-default></app-default>

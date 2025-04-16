@@ -6,7 +6,6 @@ import { FormsModule } from '@angular/forms';
   selector: 'app-ng-if',
   imports: [CommonModule,FormsModule],
   templateUrl: './ng-if.component.html',
-  styleUrl: './ng-if.component.css'
 })
 export class NgIfComponent {
   div1Visible: boolean=true;
