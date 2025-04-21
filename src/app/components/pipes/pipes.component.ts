@@ -5,7 +5,7 @@ import { CricketerPipe } from "./cricketer.pipe";
 
 @Component({
   selector: 'app-pipes',
-  imports: [CommonModule, CricketerPipe],
+  imports: [CommonModule, CricketerPipe, ExponentPipe],
   templateUrl: './pipes.component.html',
   styleUrl: './pipes.component.css'
 })

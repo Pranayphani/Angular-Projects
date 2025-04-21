@@ -13,7 +13,7 @@ export class OnPushComponent {
   constructor(private cdr: ChangeDetectorRef){
     setInterval(()=>{
       this.counter++;
-      this.cdr.detectChanges();
-    },2000);
+      this.cdr.detach();
+    },1000);
   }
 }
